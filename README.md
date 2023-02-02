@@ -14,7 +14,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![screenshot of project](./assets/images/screenshot.png)
+![screenshot of project](./assets/images/screenshot-desktop.png)
 
 ### Live Site
 
