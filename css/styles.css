@@ -597,20 +597,12 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-10 {
   height: 2.5rem;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .max-w-3xl {
@@ -678,10 +670,6 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-sm {
-  border-radius: 0.125rem;
 }
 
 .rounded-t-xl {
@@ -833,15 +821,15 @@ video {
   color: hsl(219 85% 26% / var(--tw-text-opacity));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
+/* font variables */
 
 @font-face {
   src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
 
   font-family: 'PlusJakartaSans-VariableFont_wght';
 }
+
+/* global style */
 
 body {
   font-size: 16px;
@@ -852,15 +840,12 @@ h2 {
   font-size: .87rem;
 }
 
+/* media queris */
+
 @media (min-width:976px) {
   h2 {
     font-size: 1.08rem;
   }
-}
-
-.hover\:bg-cl_Blue:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(219 85% 26% / var(--tw-bg-opacity));
 }
 
 .hover\:bg-cl_Lightgrayishblue_2:hover {
@@ -892,11 +877,6 @@ h2 {
     padding-bottom: 2rem;
   }
 
-  .md\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .md\:pb-0 {
     padding-bottom: 0px;
   }
@@ -904,11 +884,6 @@ h2 {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 
   .md\:text-lg {

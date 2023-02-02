@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
     } else {
       notif.classList.remove("bg-cl_Verylightgrayishblue")
       const unreadDot = notif.querySelector(".unread-dot")
-      unreadDot.classList.add("hidden")
+      unreadDot.style.display = "none"
     }
   })
 })
@@ -27,7 +27,7 @@ readAllBtn.addEventListener("click", function () {
       notif.dataset.id = "read"
       notif.classList.remove("bg-cl_Verylightgrayishblue")
       const unreadDot = notif.querySelector(".unread-dot")
-      unreadDot.classList.add("hidden")
+      unreadDot.style.display = "none"
     }
   })
 })

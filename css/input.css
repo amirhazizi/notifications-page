@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* font variables */
 @font-face {
     src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
     font-family: 'PlusJakartaSans-VariableFont_wght';
 }
 
+/* global style */
 body {
     font-size: 16px;
     font-family: 'PlusJakartaSans-VariableFont_wght';
@@ -16,6 +18,7 @@ h2 {
     font-size: .87rem;
 }
 
+/* media queris */
 @media (min-width:976px) {
     h2 {
         font-size: 1.08rem;
