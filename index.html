@@ -13,9 +13,7 @@
     <title>Frontend Mentor | Notifications page</title>
   </head>
   <!-- -->
-  <body
-    class="min-h-screen grid place-items-center w-screen bg-cl_Verylightgrayishblue"
-  >
+  <body class="min-h-screen grid place-items-center bg-cl_Verylightgrayishblue">
     <main>
       <!-- Notif container -->
       <div
@@ -25,12 +23,12 @@
         <div class="flex justify-between">
           <h1 class="text-xl font-extrabold md:text-2xl">
             Notifications<span
+              id="unread-counter"
               class="inline-block -translate-y-0.5 font-semibold bg-cl_Blue text-cl_White px-3 pb-px rounded-md ml-2 text-lg"
-              >3</span
-            >
+            ></span>
           </h1>
           <!-- readme buttom -->
-          <button class="font-medium text-cl_Darkgrayishblue">
+          <button id="readall-btn" class="font-medium text-cl_Darkgrayishblue">
             Mark all as read
           </button>
         </div>
@@ -38,7 +36,8 @@
         <div class="py-6 md:pb-0 flex flex-col space-y-3">
           <!-- norif 1 -->
           <div
-            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="unread"
           >
             <img
               class="h-10"
@@ -55,7 +54,7 @@
                   >My first tournament today!</span
                 >
                 <span
-                  class="-translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
                 ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">1m ago</p>
@@ -64,7 +63,8 @@
           <!-- end of norif 1 -->
           <!-- norif 2 -->
           <div
-            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="unread"
           >
             <img
               class="h-10"
@@ -78,7 +78,7 @@
                 </span>
                 followed you
                 <span
-                  class="translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
                 ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">5m ago</p>
@@ -87,7 +87,8 @@
           <!-- end of norif 2 -->
           <!-- norif 3 -->
           <div
-            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="unread"
           >
             <img
               class="h-10"
@@ -102,7 +103,7 @@
                 has joined your group
                 <span class="font-extrabold pl-1">Chess Club</span>
                 <span
-                  class="-translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
                 ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">1 day ago</p>
@@ -110,7 +111,10 @@
           </div>
           <!-- end of norif 3 -->
           <!-- norif 4 -->
-          <div class="flex items-start py-4 px-4 rounded-lg">
+          <div
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="read"
+          >
             <img
               class="h-10"
               src="./assets/images/avatar-rizky-hasanuddin.webp"
@@ -123,6 +127,9 @@
                   >Rizky Hasanuddin
                 </span>
                 sent you a private message
+                <span
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">5 days ago</p>
               <div
@@ -136,7 +143,10 @@
           </div>
           <!-- end of norif 4 -->
           <!-- norif 5 -->
-          <div class="flex items-start py-4 px-4 rounded-lg">
+          <div
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="read"
+          >
             <img
               class="h-10"
               src="./assets/images/avatar-kimberly-smith.webp"
@@ -148,6 +158,9 @@
                   >Kimberly Smith
                 </span>
                 commented on your picture
+                <span
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">1 week ago</p>
             </div>
@@ -159,7 +172,10 @@
           </div>
           <!-- end of norif 5 -->
           <!-- norif 6 -->
-          <div class="flex items-start py-4 px-4 rounded-lg">
+          <div
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="read"
+          >
             <img
               class="h-10"
               src="./assets/images/avatar-nathan-peterson.webp"
@@ -174,13 +190,19 @@
                 <span class="font-extrabold pl-1"
                   >5 end-game strategies to increase your win rate</span
                 >
+                <span
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">2 weeks ago</p>
             </div>
           </div>
           <!-- end of norif 6 -->
           <!-- norif 7 -->
-          <div class="flex items-start py-4 px-4 rounded-lg">
+          <div
+            class="notication flex items-start py-4 px-4 rounded-lg"
+            data-id="read"
+          >
             <img
               class="h-10"
               src="./assets/images/avatar-anna-kim.webp"
@@ -193,6 +215,9 @@
                 </span>
                 left the group
                 <span class="font-extrabold pl-1 text-cl_Blue">Chess Club</span>
+                <span
+                  class="unread-dot -translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
               </h2>
               <p class="text-cl_Grayishblue text-sm mt-px">2 weeks ago</p>
             </div>
@@ -216,5 +241,7 @@
         >Amir Hossein Azizi</a
       >
     </footer>
+    <!-- app.js -->
+    <script src="./js/app.js"></script>
   </body>
 </html>
