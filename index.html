@@ -12,22 +12,31 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
-  <!-- class="min-h-screen grid place-items-center w-screen" -->
-  <body>
+  <!-- -->
+  <body
+    class="min-h-screen grid place-items-center w-screen bg-cl_Verylightgrayishblue"
+  >
     <main>
-      <div class="px-4 py-6 max-w-3xl">
+      <!-- Notif container -->
+      <div
+        class="px-4 py-6 max-w-3xl bg-cl_White md:rounded-xl md:px-7 md:py-8 md:pb-0"
+      >
+        <!-- norif header -->
         <div class="flex justify-between">
-          <h1 class="text-xl font-extrabold">
+          <h1 class="text-xl font-extrabold md:text-2xl">
             Notifications<span
               class="inline-block -translate-y-0.5 font-semibold bg-cl_Blue text-cl_White px-3 pb-px rounded-md ml-2 text-lg"
               >3</span
             >
           </h1>
+          <!-- readme buttom -->
           <button class="font-medium text-cl_Darkgrayishblue">
             Mark all as read
           </button>
         </div>
-        <div class="py-6">
+        <!-- notifications -->
+        <div class="py-6 md:pb-0 flex flex-col space-y-3">
+          <!-- norif 1 -->
           <div
             class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
           >
@@ -36,36 +45,165 @@
               src="./assets/images/avatar-mark-webber.webp"
               alt="avatar-mark-webber"
             />
-            <div class="px-3 font-medium">
+            <div class="ml-3 font-medium leading-tight md:ml-4">
               <h2 class="text-cl_Darkgrayishblue">
                 <span class="font-extrabold text-cl_Verydarkblue pr-1"
                   >Mark Webber
                 </span>
                 reacted to your recent post
-                <span class="font-extrabold px-1"
+                <span class="font-extrabold pl-1"
                   >My first tournament today!</span
                 >
                 <span
-                  class="-translate-y-1/4 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                  class="-translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
                 ></span>
               </h2>
-              <p class="text-cl_Grayishblue">1m ago</p>
+              <p class="text-cl_Grayishblue text-sm mt-px">1m ago</p>
             </div>
           </div>
+          <!-- end of norif 1 -->
+          <!-- norif 2 -->
+          <div
+            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+          >
+            <img
+              class="h-10"
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="ml-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Angela Gray
+                </span>
+                followed you
+                <span
+                  class="translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">5m ago</p>
+            </div>
+          </div>
+          <!-- end of norif 2 -->
+          <!-- norif 3 -->
+          <div
+            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+          >
+            <img
+              class="h-10"
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="ml-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Jacob Thompson
+                </span>
+                has joined your group
+                <span class="font-extrabold pl-1">Chess Club</span>
+                <span
+                  class="-translate-y-1/4 translate-x-1 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">1 day ago</p>
+            </div>
+          </div>
+          <!-- end of norif 3 -->
+          <!-- norif 4 -->
+          <div class="flex items-start py-4 px-4 rounded-lg">
+            <img
+              class="h-10"
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="ml-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span
+                  class="font-extrabold text-cl_Verydarkblue pr-1 leading-tight"
+                  >Rizky Hasanuddin
+                </span>
+                sent you a private message
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">5 days ago</p>
+              <div
+                class="p-4 border rounded-sm mt-3 text-cl_Darkgrayishblue text-sm md:text-lg"
+              >
+                Hello, thanks for setting up the Chess Club. I've been a member
+                for a few weeks now and I'm already having lots of fun and
+                improving my game.
+              </div>
+            </div>
+          </div>
+          <!-- end of norif 4 -->
+          <!-- norif 5 -->
+          <div class="flex items-start py-4 px-4 rounded-lg">
+            <img
+              class="h-10"
+              src="./assets/images/avatar-kimberly-smith.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="px-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Kimberly Smith
+                </span>
+                commented on your picture
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">1 week ago</p>
+            </div>
+            <img
+              src="./assets/images/image-chess.webp"
+              alt="image-chess.webp"
+              class="h-10 ml-auto"
+            />
+          </div>
+          <!-- end of norif 5 -->
+          <!-- norif 6 -->
+          <div class="flex items-start py-4 px-4 rounded-lg">
+            <img
+              class="h-10"
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="ml-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Nathan Peterson
+                </span>
+                reacted to your recent post
+                <span class="font-extrabold pl-1"
+                  >5 end-game strategies to increase your win rate</span
+                >
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">2 weeks ago</p>
+            </div>
+          </div>
+          <!-- end of norif 6 -->
+          <!-- norif 7 -->
+          <div class="flex items-start py-4 px-4 rounded-lg">
+            <img
+              class="h-10"
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="ml-3 font-medium leading-tight md:ml-4">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Anna Kim
+                </span>
+                left the group
+                <span class="font-extrabold pl-1 text-cl_Blue">Chess Club</span>
+              </h2>
+              <p class="text-cl_Grayishblue text-sm mt-px">2 weeks ago</p>
+            </div>
+          </div>
+          <!-- end of norif 7 -->
         </div>
       </div>
     </main>
-
-    Angela Gray followed you 5m ago Jacob Thompson has joined your group Chess
-    Club 1 day ago Rizky Hasanuddin sent you a private message 5 days ago Hello,
-    thanks for setting up the Chess Club. I've been a member for a few weeks now
-    and I'm already having lots of fun and improving my game. Kimberly Smith
-    commented on your picture 1 week ago Nathan Peterson reacted to your recent
-    post 5 end-game strategies to increase your win rate 2 weeks ago Anna Kim
-    left the group Chess Club 2 weeks ago
     <!-- footer -->
     <footer
-      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-sm rounded-t-xl"
+      class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-sm rounded-t-xl bg-white"
     >
       Challenge by
       <a
