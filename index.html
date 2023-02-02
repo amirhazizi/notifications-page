@@ -12,16 +12,57 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Frontend Mentor | Notifications page</title>
   </head>
+  <!-- class="min-h-screen grid place-items-center w-screen" -->
   <body>
-    Notifications 3 Mark all as read Mark Webber reacted to your recent post My
-    first tournament today! 1m ago Angela Gray followed you 5m ago Jacob
-    Thompson has joined your group Chess Club 1 day ago Rizky Hasanuddin sent
-    you a private message 5 days ago Hello, thanks for setting up the Chess
-    Club. I've been a member for a few weeks now and I'm already having lots of
-    fun and improving my game. Kimberly Smith commented on your picture 1 week
-    ago Nathan Peterson reacted to your recent post 5 end-game strategies to
-    increase your win rate 2 weeks ago Anna Kim left the group Chess Club 2
-    weeks ago
+    <main>
+      <div class="px-4 py-6 max-w-3xl">
+        <div class="flex justify-between">
+          <h1 class="text-xl font-extrabold">
+            Notifications<span
+              class="inline-block -translate-y-0.5 font-semibold bg-cl_Blue text-cl_White px-3 pb-px rounded-md ml-2 text-lg"
+              >3</span
+            >
+          </h1>
+          <button class="font-medium text-cl_Darkgrayishblue">
+            Mark all as read
+          </button>
+        </div>
+        <div class="py-6">
+          <div
+            class="flex items-start bg-cl_Verylightgrayishblue py-4 px-4 rounded-lg"
+          >
+            <img
+              class="h-10"
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="avatar-mark-webber"
+            />
+            <div class="px-3 font-medium">
+              <h2 class="text-cl_Darkgrayishblue">
+                <span class="font-extrabold text-cl_Verydarkblue pr-1"
+                  >Mark Webber
+                </span>
+                reacted to your recent post
+                <span class="font-extrabold px-1"
+                  >My first tournament today!</span
+                >
+                <span
+                  class="-translate-y-1/4 bg-cl_Red px-1 py-1 inline-block rounded-full"
+                ></span>
+              </h2>
+              <p class="text-cl_Grayishblue">1m ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    Angela Gray followed you 5m ago Jacob Thompson has joined your group Chess
+    Club 1 day ago Rizky Hasanuddin sent you a private message 5 days ago Hello,
+    thanks for setting up the Chess Club. I've been a member for a few weeks now
+    and I'm already having lots of fun and improving my game. Kimberly Smith
+    commented on your picture 1 week ago Nathan Peterson reacted to your recent
+    post 5 end-game strategies to increase your win rate 2 weeks ago Anna Kim
+    left the group Chess Club 2 weeks ago
     <!-- footer -->
     <footer
       class="fixed bottom-0 left-1/2 -translate-x-1/2 bg-cl_white py-1 px-2 text-cl_verydarkblue_1 text-center text-sm rounded-t-xl"
